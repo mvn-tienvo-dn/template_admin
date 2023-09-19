@@ -1,123 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Bootstrap w/ Vite</title>
-  <link href="scss/styles.scss" rel="stylesheet">
-  <script src="./js/main.js" type="module"></script>
-</head>
-<body>
-<header class="page-header">
-  <div class="container-custom d-flex justify-content-between">
-    <a  class="logo" href="#">
-      <img alt="logo" src="https://monstar.fm/assets/images/common/header__logo.png">
-    </a>
-    <div class="profile d-flex align-items-center">
-      <img class="avatar" src="https://cafefcdn.com/thumb_w/640/203337114487263232/2022/3/3/photo1646280815645-1646280816151764748403.jpg" alt="avatar">
-      <p class="name">Henry</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><g id="Function/chevron"><path id="shape (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M9.96967 6.74939C10.2626 6.4565 10.7374 6.4565 11.0303 6.74939L16.0303 11.7494C16.171 11.89 16.25 12.0808 16.25 12.2797C16.25 12.4786 16.171 12.6694 16.0303 12.8101L11.0303 17.8101C10.7374 18.1029 10.2626 18.1029 9.96967 17.8101C9.67678 17.5172 9.67678 17.0423 9.96967 16.7494L14.4393 12.2797L9.96967 7.81005C9.67678 7.51716 9.67678 7.04229 9.96967 6.74939Z" fill="#32A4A2"></path></g></svg>
-    </div>
-  </div>
-</header>
-<main class="d-flex justify-content-between p-10" >
-  <nav class="side-bar">
-    <div class="toggle-nav">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><g id="Function/chevron"><path id="shape (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M9.96967 6.74939C10.2626 6.4565 10.7374 6.4565 11.0303 6.74939L16.0303 11.7494C16.171 11.89 16.25 12.0808 16.25 12.2797C16.25 12.4786 16.171 12.6694 16.0303 12.8101L11.0303 17.8101C10.7374 18.1029 10.2626 18.1029 9.96967 17.8101C9.67678 17.5172 9.67678 17.0423 9.96967 16.7494L14.4393 12.2797L9.96967 7.81005C9.67678 7.51716 9.67678 7.04229 9.96967 6.74939Z" fill="#32A4A2"></path></g></svg>
-    </div>
-    <ul class="nav">
-      <li class="nav-item">
-        Top
-      </li>
-      <li class="nav-item">
-        Top
-      </li>
-      <li class="nav-item">
-        Top
-      </li>
-      <li class="nav-item">
-        Top
-      </li>
-      <li class="nav-item">
-        Top
-      </li>
-    </ul>
-  </nav>
-  <div class="panel">
-    <div class="panel-page-header">
-      <h2 class="title">Top</h2>
-      <div class="breadcrumb">
-        <span>Top</span>/<span>top</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Bootstrap w/ Vite</title>
+    <link href="scss/styles.scss" rel="stylesheet" />
+    <script src="./js/main.js" type="module"></script>
+    <link rel=""/>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container-custom d-flex justify-content-between">
+        <a class="logo" href="#">
+          <h1>MONSTAR.FM ADMIN</h1>
+          <!-- <img
+            alt="logo"
+            src="https://monstar.fm/assets/images/common/header__logo.png"
+          /> -->
+        </a>
+        <div class="profile d-flex align-items-center">
+          <img
+            class="avatar"
+            src="https://cafefcdn.com/thumb_w/640/203337114487263232/2022/3/3/photo1646280815645-1646280816151764748403.jpg"
+            alt="avatar"
+          />
+          <p class="name">Henry</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+          >
+            <g id="Function/chevron">
+              <path
+                id="shape (Stroke)"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.96967 6.74939C10.2626 6.4565 10.7374 6.4565 11.0303 6.74939L16.0303 11.7494C16.171 11.89 16.25 12.0808 16.25 12.2797C16.25 12.4786 16.171 12.6694 16.0303 12.8101L11.0303 17.8101C10.7374 18.1029 10.2626 18.1029 9.96967 17.8101C9.67678 17.5172 9.67678 17.0423 9.96967 16.7494L14.4393 12.2797L9.96967 7.81005C9.67678 7.51716 9.67678 7.04229 9.96967 6.74939Z"
+                fill="#32A4A2"
+              ></path>
+            </g>
+          </svg>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="card">
-        <div class="table-responsive">
-          <div class="row">
-            <div class="col-6">
-              <label>
-                <input name="search" type="search" placeholder="Search" />
-              </label>
-            </div>
-            <div class="col-6">
-              <div class="form-group">
-                <div class="form-check form-check-primary">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked=""> Primary <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check form-check-success">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked=""> Success <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check form-check-info">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked=""> Info <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check form-check-danger">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked=""> Danger <i class="input-helper"></i></label>
-                </div>
-                <div class="form-check form-check-warning">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" checked=""> Warning <i class="input-helper"></i></label>
-                </div>
+    </header>
+    <main class="page-main">
+      <section class="main-content">
+        <aside class="side-bar">
+          <ul>
+            <li class="nav-item active">Top</li>
+            <li class="nav-item">User Management</li>
+            <li class="nav-item">Artist Management</li>
+            <li class="nav-item">Sale Performance</li>
+            <li class="nav-item">Sale Performance</li>
+          </ul>
+        </aside>
+        <div class="content-right">
+          <div class="panel-page-header">
+            <h2 class="title">Top</h2>
+            <!-- <div class="breadcrumb"><span>Top</span>/<span>top</span></div> -->
+          </div>
+          <div class="content">
+            <div class="card card-modify">
+              <div class="table-responsive">
+                <!-- <div class="row">
+                  <div class="col-6">
+                    <label>
+                      <input name="search" type="search" placeholder="Search" />
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <div class="form-check form-check-primary">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            checked="" />
+                          Primary <i class="input-helper"></i
+                        ></label>
+                      </div>
+                      <div class="form-check form-check-success">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            checked="" />
+                          Success <i class="input-helper"></i
+                        ></label>
+                      </div>
+                      <div class="form-check form-check-info">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            checked="" />
+                          Info <i class="input-helper"></i
+                        ></label>
+                      </div>
+                      <div class="form-check form-check-danger">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            checked="" />
+                          Danger <i class="input-helper"></i
+                        ></label>
+                      </div>
+                      <div class="form-check form-check-warning">
+                        <label class="form-check-label">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            checked="" />
+                          Warning <i class="input-helper"></i
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Action</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>2023/09/08 13:03:01</td>
+                      <td><span class="btn btn-primary">Download</span></td>
+                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>2023/09/08 13:03:01</td>
+                      <td><span class="btn btn-primary">Download</span></td>
+                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry the Bird</td>
+                      <td>@twitter</td>
+                      <td>2023/09/08 13:03:01</td>
+                      <td><span class="btn btn-primary">Download</span></td>
+                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+
               </div>
             </div>
           </div>
-          <table class="table">
-            <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-            </tbody>
-          </table>
         </div>
-      </div>
-    </div>
-
-  </div>
-</main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
