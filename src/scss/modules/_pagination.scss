@@ -1,0 +1,18 @@
+.pagination {
+  a {
+    background: #191c24;
+    color: white;
+    border: unset;
+    font-size: 14px;
+    &:hover {
+      background: unset;
+      color: #f2af32;
+    }
+    &:focus {
+      background: unset;
+      box-shadow: unset;
+      border: unset;
+      color: #f2af32;
+    }
+  }
+}

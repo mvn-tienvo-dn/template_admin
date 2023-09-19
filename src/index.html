@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
     <title>Bootstrap w/ Vite</title>
     <link href="scss/styles.scss" rel="stylesheet" />
     <script src="./js/main.js" type="module"></script>
-    <link rel=""/>
+    <link rel="" />
   </head>
   <body>
     <header class="page-header">
@@ -62,64 +62,98 @@
             <!-- <div class="breadcrumb"><span>Top</span>/<span>top</span></div> -->
           </div>
           <div class="content">
-            <div class="card card-modify">
+            <div class="card card-modify p-20">
               <div class="table-responsive">
-                <!-- <div class="row">
+                <div class="row search-form mb-4">
                   <div class="col-6">
-                    <label>
-                      <input name="search" type="search" placeholder="Search" />
-                    </label>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <div class="form-check form-check-primary">
-                        <label class="form-check-label">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            checked="" />
-                          Primary <i class="input-helper"></i
-                        ></label>
+                    <div class="input-group search-input rounded-2 row">
+                      <div class="col-11">
+                        <input
+                          type="search"
+                          placeholder="What're you searching for?"
+                          aria-describedby="button-addon1"
+                          class="form-control border-0 bg-light rounded-2"
+                        />
+                        <div class="form-group d-inline-block mt-3">
+                          <span class="mr-20">
+                            <label class="form-check-label">
+                              <input
+                                checked=""
+                                class="form-check-input mr-5"
+                                type="checkbox" />
+                              User Name <i class="input-helper"></i
+                            ></label>
+                          </span>
+                          <span class="mr-20">
+                            <label class="form-check-label">
+                              <input
+                                checked=""
+                                class="form-check-input mr-5"
+                                type="checkbox" />
+                              Email <i class="input-helper"></i
+                            ></label>
+                          </span>
+                          <span class="mr-20">
+                            <label class="form-check-label">
+                              <input
+                                checked=""
+                                class="form-check-input mr-5"
+                                type="checkbox" />
+                              Company <i class="input-helper"></i
+                            ></label>
+                          </span>
+                          <span class="mr-20">
+                            <label class="form-check-label">
+                              <input
+                                checked=""
+                                class="form-check-input mr-5"
+                                type="checkbox" />
+                              Danger <i class="input-helper"></i
+                            ></label>
+                          </span>
+                          <span>
+                            <label class="form-check-label">
+                              <input
+                                checked=""
+                                class="form-check-input mr-5"
+                                type="checkbox" />
+                              Warning <i class="input-helper"></i
+                            ></label>
+                          </span>
+                        </div>
                       </div>
-                      <div class="form-check form-check-success">
-                        <label class="form-check-label">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            checked="" />
-                          Success <i class="input-helper"></i
-                        ></label>
-                      </div>
-                      <div class="form-check form-check-info">
-                        <label class="form-check-label">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            checked="" />
-                          Info <i class="input-helper"></i
-                        ></label>
-                      </div>
-                      <div class="form-check form-check-danger">
-                        <label class="form-check-label">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            checked="" />
-                          Danger <i class="input-helper"></i
-                        ></label>
-                      </div>
-                      <div class="form-check form-check-warning">
-                        <label class="form-check-label">
-                          <input
-                            type="checkbox"
-                            class="form-check-input"
-                            checked="" />
-                          Warning <i class="input-helper"></i
-                        ></label>
+
+                      <div class="col-1 input-group-append p-0">
+                        <button
+                          id="button-addon1"
+                          type="submit"
+                          class="btn btn-link text-primary btn-outline-primary"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#f2af32"
+                            class="bi bi-search"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                            />
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </div>
-                </div> -->
+                  <div class="col-6 text-end">
+                    <div class="add text-end">
+                      <button type="button" class="btn btn-outline-primary">
+                        Add new user
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
                 <table class="table table-dark table-striped">
                   <thead>
                     <tr>
@@ -127,9 +161,7 @@
                       <th scope="col">First</th>
                       <th scope="col">Last</th>
                       <th scope="col">Date</th>
-                      <th scope="col">Status</th>
                       <th scope="col">Action</th>
-
                     </tr>
                   </thead>
                   <tbody>
@@ -138,33 +170,170 @@
                       <td>Mark</td>
                       <td>Otto</td>
                       <td>2023/09/08 13:03:01</td>
-                      <td><span class="btn btn-primary">Download</span></td>
-                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Detail
+                        </button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Jacob</td>
                       <td>Thornton</td>
                       <td>2023/09/08 13:03:01</td>
-                      <td><span class="btn btn-primary">Download</span></td>
-                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Detail
+                        </button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>Larry the Bird</td>
                       <td>@twitter</td>
                       <td>2023/09/08 13:03:01</td>
-                      <td><span class="btn btn-primary">Download</span></td>
-                      <td><button type="button" class="btn btn-outline-primary">Detail</button></td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Detail
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
 
+                <nav aria-label="Page navigation example" class="pt-20">
+                  <ul class="pagination justify-content-end mb-0">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="forms-sample">
+              <div class="form-group">
+                <label for="exampleInputUsername1">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputUsername1"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputConfirmPassword1"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputConfirmPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-check form-check-flat form-check-primary">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" /> Remember me
+                  <i class="input-helper"></i
+                ></label>
+              </div>
+              <!--              <button type="submit" class="btn btn-primary me-2">Submit</button>-->
+              <!--              <button class="btn btn-dark">Cancel</button>-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
