@@ -1,0 +1,49 @@
+.page-header {
+  background-color: #38425e;
+  .container-custom {
+    padding: 10px;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .logo {
+    color: #f2af32;
+    text-decoration: none;
+  }
+}
+
+.search-form {
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  .form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  label {
+    color: white;
+    margin-bottom: 5px;
+  }
+}
+
+.form {
+  input {
+    background-color: #2a3038;
+    &:focus {
+      background-color: #2a3038;
+      border: 0.5px solid #f2af32;
+      color: white;
+    }
+  }
+}
